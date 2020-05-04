@@ -45,3 +45,32 @@ class Person
     this.name = newName;
   }
 } 
+
+
+/*
+        Example #2
+	Some advantages of having getters and setters are:
+	-code become readable
+	-you can add readable logic in the code block just like in the setModel below
+*/
+
+class Car{
+    private String model;
+
+    public void setModel(String model){ 
+        String isCorolla = model.toLowerCase(); //code logic before input can be accepted
+        if (isCorolla.equals("corolla")) {
+            this.model = model;
+        }
+        else {
+            System.out.println("can't set model. Only corollas are allowed");
+        }
+    }
+
+    public String getModel(){
+	//you may also add an optional logic/condition here. 
+	//Ex: make the returned model in uppercase. return this.model.toUpperCase();
+        return this.model;
+    }
+
+}

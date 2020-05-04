@@ -1,8 +1,12 @@
 //See reference for rules: https://www.geeksforgeeks.org/overloading-in-java/
+/*
+This is a basic example of polymorphism.
 
+Method Overloading is static polymorphism : Same method name is overloaded with different type or number of parameters in same class (different signature). Targeted method call is resolved at compile time
 
-// Java program to demonstrate working of method 
-// overloading in Java. 
+Same name but different params. Can also be implemented in child classes.
+*/
+
 
 public class Sum { 
 

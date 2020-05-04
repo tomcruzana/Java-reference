@@ -34,7 +34,7 @@ class Tank
 
   public void fire()
   {
-    System.out.printf("Tank buster %s launched a ballistic missile!\nTotal fires: %s\n", name, totalFires);
+    System.out.printf("Tank buster %s launched a ballistic missile!\nTotal fires: %d\n", name, totalFires);
   }
 
   public static int getTotalTanks()
