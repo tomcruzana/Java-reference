@@ -12,7 +12,7 @@ class Factorial
   {
     if(n <= 1) //base case - always have a base case or else your recursion will never end.
     {
-      return 1;
+      return 1; //returning 1 in programming terms means the output is met or valid
     }
     else
     {
