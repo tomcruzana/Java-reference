@@ -1,8 +1,8 @@
 /*
 https://en.wikipedia.org/wiki/Composition_over_inheritance
-The composition principle enables a programmer to model a (has-a) relationship between classes. As an example:  A laptop has a processor (CPU) so, a laptop class can have an instance of a processor class as its member. 
+The composition principle enables a programmer to model a (part-of) relationship between classes. As an example:  Part of a laptop is a processor (CPU) so, a laptop class can have an instance of a processor class as its member. 
 
-I think it's worth mentioning that the composition and aggregation principles are subsets of association. There is a subtle difference between composition and aggregation. Aggregation indicates that a child class can exist independently of the parent class.  Composition demonstrates that a child class can't survive if the parent class is deleted. As an example:  A computer motherboard has a processor. Hence, in OOP, a Motherboard class can have an instance of a Processor class as its member.
+I think it's worth mentioning that the composition and aggregation principles are subsets of association. There is a subtle difference between composition and aggregation. Aggregation indicates that a child class can exist independently of the parent class.  Composition demonstrates that a child class can't survive if the parent class is deleted. As an example: Part-of a computer motherboard is a processor. Hence, in OOP, a Motherboard class can have an instance of a Processor class as its member.
 
 class Motherboard
 {

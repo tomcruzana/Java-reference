@@ -32,7 +32,7 @@ public class Motherboard
 {
   public void powerOn()
   {
-    Processor processor1 = new Processor("AMD", 3.60); //composition: the motherboard "has-a" processor. In other words, has a is a composition-type relationship. So we create an instance of the processor class inside this Motherboard class.
+    Processor processor1 = new Processor("AMD", 3.60); //composition: the motherboard has a "part-of" relationship with the processor. In other words, (part-of) is a composition-type relationship. So we create an instance of the processor class inside this Motherboard class.
     
     System.out.println("The computer is now running...");
    

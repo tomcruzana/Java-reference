@@ -1,7 +1,29 @@
-//Read me: https://www.geeksforgeeks.org/interfaces-in-java/
-/*
-All variables declared inside interface are implicitly public static final variables(constants). All methods declared inside Java Interfaces are implicitly public and abstract, even if you don't use public or abstract keyword. Interface can extend one or more other interface.
+
+/*	
+An interface is a completely "abstract class" that is used to group related methods with empty bodies:
+	
+To access the interface methods, the interface must be "implemented" (kinda like inherited) by another 	class with the implements keyword (instead of extends). The body of the interface method is provided by 	the "implement" class:
+
+
+Notes on Interfaces:
+
+    Like abstract classes, interfaces cannot be used to create objects (in the example above, it is not possible to create an "Animal" object in the MyMainClass)
+    Interface methods do not have a body - the body is provided by the "implement" class
+    On implementation of an interface, you must override all of its methods
+    Interface methods are by default abstract and public
+    Interface attributes are by default public, static and final
+    An interface cannot contain a constructor (as it cannot be used to create objects)
+
+Why And When To Use Interfaces?
+
+1) To achieve security - hide certain details and only show the important details of an object (interface).
+
+2) Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below).
+
+Side note:
+Use abstract class when you want to extend a comman base and where you want to provide a default implementation to the abstract method. Use interface when you want to exactly implement all the abstract methods to the class implementaing the interface and no default body to a method can be provided.
 */
+
 import java.io.*; 
 
 interface Vehicle { 
