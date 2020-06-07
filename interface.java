@@ -20,8 +20,15 @@ Why And When To Use Interfaces?
 
 2) Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below).
 
+
 Side note:
+
 Use abstract class when you want to extend a comman base and where you want to provide a default implementation to the abstract method. Use interface when you want to exactly implement all the abstract methods to the class implementaing the interface and no default body to a method can be provided.
+
+The interface class' name should by named after the functionality that we are trying to abstract away. ex: 
+public interface Transformable {
+    public void transform();
+}
 */
 
 import java.io.*; 
