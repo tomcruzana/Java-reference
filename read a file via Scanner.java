@@ -62,3 +62,31 @@ class readfile
 		x.close(); //close the file
 	}	
 }
+
+//Example #2
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args)
+    {
+        File f = new File("C:\\Users\\tomcr\\Desktop\\sample.txt");
+        Scanner s = null;
+        try {
+            s = new Scanner(f);
+
+            while (s.hasNextLine()) {
+                String line = s.nextLine();
+                System.out.println(line);
+            }
+
+            s.close();
+        }
+        catch (FileNotFoundException e) { //removing the error handler will cause problems
+            e.printStackTrace();
+        }
+    }
+}
