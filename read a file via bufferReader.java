@@ -12,7 +12,7 @@ We can also use both BufferReader and Scanner to read a text file line by line i
 
 
 // Java Program to illustrate reading from FileReader 
-// using BufferedReader 
+// Example 1: using BufferedReader 
 import java.io.*; 
 public class ReadFromFile2 
 { 
@@ -30,3 +30,52 @@ public class ReadFromFile2
 			System.out.println(st); 
 	} 
 } 
+
+//Example 2: 
+import java.io.*;
+
+public class Main
+{
+    public static void main(String[] args){
+        //C:\Users\tomcr\Desktop\test.txt
+        FileExplorer fe = new FileExplorer("C:\\Users\\tomcr\\Desktop\\test.txt"); //instantiate the class
+        fe.readFile(); 
+    }
+}
+
+class FileExplorer{
+    private String path = null;
+    private File f;
+    private FileReader fr;
+    private BufferedReader br;
+
+    public FileExplorer(String path) {
+        this.path = path;
+    }
+
+    public void readFile(){
+        try{ //error handler is needed for this implementation
+            f = new File(this.path); //fetch the file
+            fr = new FileReader(f); //read the file
+            br = new BufferedReader(fr); //create a buffer to make the reading more efficient
+
+            String line = br.readLine(); //read the first line
+
+            while(line != null){ //loop until there are no more lines
+                System.out.println(line); //print the line
+                line = br.readLine(); //read the next line
+            }
+        }
+        catch(Exception e){
+            System.out.println("An error occurred " + e);
+        }
+        finally {
+            try{ //error handler is needed for this implementation
+                br.close(); //close the stream
+            }
+            catch (Exception e){
+                System.out.println("An error occurred " + e);
+            }
+        }
+    }
+}
