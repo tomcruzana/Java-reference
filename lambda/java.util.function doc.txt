@@ -1,0 +1,3 @@
+Functional interfaces provide target types for lambda expressions and method references.
+
+doc: https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
