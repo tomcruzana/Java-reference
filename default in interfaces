@@ -1,0 +1,20 @@
+public class Main{
+    public static void main(String[] args) {
+        //lambda
+        walkable Tom = () -> System.out.println("I'm walking");
+
+        //invoke method interfaces w/ polymorphism
+        Tom.walk();
+        Tom.walk("Tom");
+    }
+}
+
+
+interface walkable{
+    public void walk(); //by default, interface methods are public
+
+    default void walk(String name){ //in java 8, interface methods are allowed to have a body if you declare it as a default method
+        System.out.println("walking... " + name);
+    }
+
+}
