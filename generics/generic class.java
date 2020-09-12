@@ -19,24 +19,24 @@ In Java SE 7 and later, you can replace the type arguments required to invoke th
 //Main module
 class Main{
     public static void main(String[] args) {
-        Student<String, Integer> s = new Student("Thomas", 29);
+        Speak<String, Integer> s = new Speak("Thomas", 1);
         System.out.println(s.toString());
     }
 }
 
-//Student module
-public class Student <i1, i2>{
-    private i1 name;
-    private i2 grade;
+class Speak<T,S>{
 
-    public Student(i1 name, i2 grade) {
-        super();
-        this.name = name;
-        this.grade = grade;
-    }
+  private T name;
+  private S grade;
 
-    @Override
+  public Speak(T name, S grade){
+    this.name = name;
+    this.grade = grade;
+  }
+
+  @Override
     public String toString() {
-        return String.format("%s/%d", name, grade);
+        return String.format(" Name: %s %n Grade: %d", name, grade);
     }
 }
+
