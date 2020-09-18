@@ -1,3 +1,4 @@
+//doc: https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
 //the ArrayList is part of the collections framework. In this example we will be declaring an ArrayList with no specific data type. Thus it will be storing data as objects.
 
 import java.util.ArrayList;
