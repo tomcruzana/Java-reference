@@ -1,6 +1,8 @@
 //Example 1: Exception handler via functon parameter extention
 /*
-Throws clause is used to declare an exception, which means it works similar to the try-catch block. ... Throw keyword is used in the method body to throw an exception, while throws is used in method signature to declare the exceptions that can occur in the statements present in the method.
+Throws clause is used to declare an exception, which means it works similar to the try-catch block. ... 
+Throw keyword is used in the method body to throw an exception, while throws is used in method signature to declare the exceptions 
+that can occur in the statements present in the method.
 */
 
 //Main module
