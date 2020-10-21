@@ -29,6 +29,29 @@ public class Main
      System.out.println("\n" + sum);
      
   }
+     
+     /*
+     The following are helper methods for array formatting
+     
+     ::print the array values into string
+     int[] l = {1,2,3};
+     System.out.println(Arrays.toString(l));
+     
+     ::copies to another array
+     String[] msg = {"1", "two"};
+     String[] newMsg = Arrays.copyOf(msg, msg.length * 2);
+     System.out.println(Arrays.toString(newMsg));
+     System.out.println(newMsg.length);
+     
+     ::sorts the array. It uses the quicksort algorithm
+     int[] o = {123, 2, 11, 342};
+     Arrays.sort(o);
+     System.out.println(Arrays.toString(o));
+    
+     ::To print out a quick-and-dirty list of the elements of a two-dimensional array, call
+     int[][] ma = new int[][] {{1, 2, 3, 4}, {5, 6, 9, 12}};
+     System.out.println(Arrays.deepToString(ma));
+     */
 
     
 }
