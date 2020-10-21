@@ -1,0 +1,29 @@
+/*
+  BigInteger is for int with long sequencing of numbers, and BigDecimal has the same user but for floating points.
+  
+  Docs: 
+  https://www.geeksforgeeks.org/biginteger-class-in-java/
+  https://www.geeksforgeeks.org/bigdecimal-class-java/
+*/
+
+Big int and Big decimal
+BigInteger j = BigInteger.valueOf(2138872);
+BigInteger k = BigInteger.valueOf(1111111);
+BigInteger z = BigInteger.valueOf(100);
+BigInteger sum = j.add(k);
+BigInteger product = sum.multiply(z);
+
+System.out.println(sum);
+System.out.println(product);
+
+
+
+CREATE A BIG DECIMAL HERE FOR FLOATING POINTS
+BigDecimal j = BigDecimal.valueOf(213.8872);
+BigDecimal k = BigDecimal.valueOf(1111.111);
+BigDecimal z = BigDecimal.valueOf(100.99);
+BigDecimal sum = j.add(k);
+BigDecimal product = sum.multiply(z);
+
+System.out.println(sum);
+System.out.println(product);
