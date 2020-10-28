@@ -1,5 +1,19 @@
-//comparable
-//doc: https://www.youtube.com/watch?v=oAp4GYprVHM
+/*
+Comparator
+
+Comparable and comparator both are an interface that can be used to sort the elements of the collection. 
+Comparator interface belongs to java.util package while comparable belongs to java.lang package. 
+Comparator interface sort collection using two objects provided to it, whereas comparable interface compares" this" refers to the one objects provided to it. 
+
+Note: Kung titingnan mo, dalawa yung params ng method compare ng Comparator interface. So that means, 2 objects na kahit ano ang pwedeing ikumpara.
+On the otherhand, yung compareTo method ng Comparable interface ay meroon lamang isang params which is para sa other object na iccompare sa current (this) object.
+
+Comparable vs. Comparator
+doc: https://www.youtube.com/watch?v=oAp4GYprVHM
+
+Read more here:
+https://www.tutorialspoint.com/difference-between-comparable-and-comparator-in-java
+*/
 package com.company;
 import java.util.*;
 
